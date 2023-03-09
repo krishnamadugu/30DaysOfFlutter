@@ -35,7 +35,10 @@ class LoginPage extends StatelessWidget {
             padding:
                 const EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
             child: TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
                 hintText: 'Enter username',
                 labelText: 'Username',
               ),
@@ -46,9 +49,13 @@ class LoginPage extends StatelessWidget {
                 const EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
             child: TextFormField(
               obscureText: true,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
                 hintText: 'Enter password',
                 labelText: 'password',
+                suffixIcon: const Icon(Icons.visibility_off),
               ),
             ),
           ),
